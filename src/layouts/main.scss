@@ -1,0 +1,66 @@
+@import '~a/scss/config/_fonts';
+@import '~a/scss/config/_normalize';
+
+html,
+body {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	max-width: 100%;
+    min-width: 320px;
+	overflow-x: hidden;
+	font-size: 10px;
+	line-height: 1.2;
+  	@include media(sm) {
+		font-size: 12px;
+	}
+  	@include media(md) {
+		font-size: 14px;
+	}
+}
+body {
+	font-family: 'Open Sans', Arial, sans-serif;
+	color: $black;
+	box-sizing: border-box;
+	position: relative;
+	overflow-x: hidden;
+	& * {
+		outline: none !important;
+	  }
+}
+img {
+	max-width: 100%;
+}
+picture {
+	display: inline-block;
+}
+.view-wrapper {
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin: auto;
+	height: 100%;
+}
+.view-main {
+	flex: 1 0;
+	position: relative;
+}
+main {
+	position: relative;
+}
+.view-content {
+	height: 100%;
+	width: 100%;
+	max-width: $content-size;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+  @include media (md) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+}

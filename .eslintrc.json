@@ -1,0 +1,74 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      },
+      "import/parsers": {
+        "@typescript-eslint/parser": [".ts", ".tsx"]
+      },
+      "import/resolver": {
+        "alias": {
+          "map": [
+            ["~", "./src"],
+            ["~c", "./src/components"],
+            ["~p", "./src/containers"],
+            ["~s", "./src/store"],
+            ["~a", "./src/assets"]
+          ],
+          "extensions": [".ts", ".tsx", ".js", ".jsx", ".json"]
+        },
+        "typescript": {
+          "alwaysTryTypes": true,
+            "project": "./tsconfig.json"
+        }
+      },
+      "import/order": [
+        "error",
+        {
+          "groups": ["builtin", "external", "internal"],
+          "pathGroups": [
+            {
+              "pattern": "react",
+              "group": "external",
+              "position": "before"
+            }
+          ],
+          "pathGroupsExcludedImportTypes": ["react"],
+          "newlines-between": "always",
+          "alphabetize": {
+            "order": "asc",
+            "caseInsensitive": true
+          }
+        }
+      ]
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "project": "./tsconfig.json",
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "plugins": [
+        "import",
+        "react",
+        "@typescript-eslint"
+    ],
+    "ignorePatterns": ["webpack", "webpack.config.js", "postcss.config.js", "next.config.js"],
+    "rules": {
+      "import/no-unresolved": "error",
+      "react/jsx-uses-react": "off",
+      "react/react-in-jsx-scope": "off"
+    }
+}

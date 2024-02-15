@@ -1,0 +1,35 @@
+$breakpoints: (
+	sm: 575px,
+	md: 767px,
+	lg: 991px,
+  xl: 1199px,
+  xxl: 1367px
+);
+
+$devices: (
+	iphone4: "only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)",
+	iphone5: "only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2)",
+	iphone6: "only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2)",
+	iphone6plus: "only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3)",
+	ipadmini: "only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)",
+	ipad1: "only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)",
+	ipad2: "only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)",
+	ipad3: "only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)",
+	ipad4: "only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)"
+);
+
+$orientations: (
+	auto: "only screen and (orientation: auto)",
+	landscape: "only screen and (orientation: landscape)",
+	portrait: "only screen and (orientation: portrait)"
+);
+
+$white: #ffffff;
+$black: #000000;
+$gray: #d1d1d1;
+$crimson: #f22f59;
+$purple: #5f3586;
+$cyan: #0eeabb;
+
+$page-size: 1920px;
+$content-size: 1170px;

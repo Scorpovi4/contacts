@@ -1,0 +1,4 @@
+{
+  "extends": ["plugin:prettier/recommended"],
+  "tabWidth": 4
+}
