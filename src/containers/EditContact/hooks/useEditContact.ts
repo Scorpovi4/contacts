@@ -19,5 +19,5 @@ export const useEditContact = () => {
         navigate('/');
     }
 
-    return [{contact}, {handleSubmit}]
+    return [{ contact }, { handleSubmit }]
 };

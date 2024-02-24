@@ -96,7 +96,7 @@ exports.devServer = (root) => ({
     static: {
         directory: path.join(root, 'public'),
     },
-    port: 9000,
+    port: 3000,
     hot: true,
     open: true,
     historyApiFallback: true,
@@ -136,5 +136,6 @@ exports.resolve = (root) => ({
         '~p': path.resolve(root, 'src/containers'),
         '~s': path.resolve(root, 'src/store'),
         '~a': path.resolve(root, 'src/assets'),
+        '~t': path.resolve(root, 'src/@types'),
     },
 })

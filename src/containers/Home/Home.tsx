@@ -1,6 +1,6 @@
 import ContactsList from "~c/ui/ContactsList";
 import {useHome} from "./hooks/useHome";
-import MainLayout from '~/layouts/main';
+import MainLayout from '~/layouts/Main';
 function HomePage() {
     const [{ contacts }, {onDelete}] = useHome();
 

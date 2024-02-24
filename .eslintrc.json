@@ -17,7 +17,8 @@
             ["~c", "./src/components"],
             ["~p", "./src/containers"],
             ["~s", "./src/store"],
-            ["~a", "./src/assets"]
+            ["~a", "./src/assets"],
+            ["~t", "./src/@types"]
           ],
           "extensions": [".ts", ".tsx", ".js", ".jsx", ".json"]
         },
@@ -65,7 +66,7 @@
         "react",
         "@typescript-eslint"
     ],
-    "ignorePatterns": ["webpack", "webpack.config.js", "postcss.config.js", "next.config.js"],
+    "ignorePatterns": ["webpack", "webpack.config.js", "postcss.config.js"],
     "rules": {
       "import/no-unresolved": "error",
       "react/jsx-uses-react": "off",

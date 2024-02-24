@@ -1,4 +1,4 @@
-import MainLayout from '~/layouts/main';
+import MainLayout from '~/layouts/Main';
 import AddEditContactForm from "~c/ui/AddEditContactForm";
 import {useCreateContact} from "./hooks/useCreateContact.ts";
 function CreateContact() {

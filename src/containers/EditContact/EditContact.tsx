@@ -1,5 +1,5 @@
 import AddEditContactForm from "~c/ui/AddEditContactForm/index";
-import MainLayout from '~/layouts/main';
+import MainLayout from '~/layouts/Main';
 import {useEditContact} from "./hooks/useEditContact.ts";
 function EditContact() {
     const [{contact}, { handleSubmit}] = useEditContact();

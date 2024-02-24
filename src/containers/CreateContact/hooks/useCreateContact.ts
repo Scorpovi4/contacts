@@ -3,6 +3,7 @@ import {createContact, selectContacts} from "~/store/contacts";
 import {useNavigate} from "react-router-dom";
 
 type Contact = {
+    id: string,
     firstName: string,
     lastName: string,
     email: string,

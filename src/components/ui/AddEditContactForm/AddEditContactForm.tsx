@@ -1,21 +1,9 @@
 import {Form, Col, Button, InputGroup} from 'react-bootstrap';
+import { Props } from './AddEditContactForm.d';
 import { useAddEditContactForm } from './hooks/useAddEditContactForm.ts';
 import { v4 as uuid } from 'uuid';
 
 import './styles.scss';
-
-type Contact = {
-    id: string;
-    firstName: string;
-    lastName: string;
-    email: string;
-}
-
-type Props = {
-    contact?: Contact;
-    isEdit?: boolean;
-    onSubmit: (data: Contact) => void;
-}
 
 function AddEditContactForm({ contact, isEdit, onSubmit }: Props) {
     const [{Formik, schema}] = useAddEditContactForm();

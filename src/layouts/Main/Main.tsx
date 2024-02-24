@@ -1,6 +1,6 @@
 import {JSX} from 'react';
 import Header from "~c/partials/Header";
-import './main.scss';
+import './styles.scss';
 
 type Props = {
   children: JSX.Element,
